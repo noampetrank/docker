@@ -25,6 +25,9 @@ docker build bugarepos --tag=bugarepos
 # bugaengine
 There's a shell script in this directory that copies *your* local ipyparallel engine json configuration file, from the default profile.
 
+* You need ipyparallel if you want to run ipcontroller:
+    `pip2 install ipyparallel --user`
+
 To run the ipcontroller such that it can be connected to, and also generate the engine configuration file for the first time, run:
 ```
 ipcontroller --ip="*" --location=10.0.0.? --reuse
