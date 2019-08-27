@@ -4,6 +4,9 @@ rm -rf Bugatone-Space
 mkdir -p Bugatone-Space/lib/linux_x86
 mkdir -p Bugatone-Space/parameters/operational/
 cp /home/buga/Bugatone-Space/lib/linux_x86/libbugatone_algo_c.so Bugatone-Space/lib/linux_x86/
+cp /home/buga/Bugatone-Space/lib/linux_x86/libbugatone_algo.so Bugatone-Space/lib/linux_x86/
+cp /home/buga/Bugatone-Space/lib/linux_x86/libbugatone_common.so Bugatone-Space/lib/linux_x86/
+cp -r /usr/lib/x86_64-linux-gnu/libfftw3_omp.so.3.5.7 Bugatone-Space/lib/linux_x86/
 cp -r /usr/lib/x86_64-linux-gnu/libfftw3_omp.so.3 Bugatone-Space/lib/linux_x86/
 cp /usr/lib/x86_64-linux-gnu/libfftw3q.so.3 Bugatone-Space/lib/linux_x86/
 cp /usr/lib/x86_64-linux-gnu/libfftw3q_omp.so.3 Bugatone-Space/lib/linux_x86/
