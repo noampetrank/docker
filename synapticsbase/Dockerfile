@@ -24,7 +24,7 @@ RUN pip install klepto git+https://github.com/Bugatone/pipe.git git+https://gith
 ENV PYTHONPATH "${PYTHONPATH}:/home/buga/Bugatone-Space/python"
 ENV BUGATONE_ROOT=/home/buga/Bugatone-Space
 
-RUN mkdir -p /home/buga/buga_logs \
+RUN ln -s /root /home/buga && mkdir -p /home/buga/buga_logs \
     && mkdir -p /home/buga/tmp_dir \
     && mkdir -p /home/buga/experiments
 
